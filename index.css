@@ -97,6 +97,18 @@ body{
     padding-top: 20px;
     
 }
+
+.fram-div{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+   position: relative;
+   bottom: 200px;
+   
+  
+      
+}
 @media (max-width: 768px) {
 
   .bg-input{
@@ -173,16 +185,16 @@ body{
     gap: 40px;
 }
 
+
 @media (max-width: 768px) {
   .group-div{
-     scrollbar-width: none;
-      scroll-behavior: smooth;
-      overflow: hidden;
-  overflow-x: scroll;
+     display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; 
+  align-items: center;  
   }
-  .group-div::-webkit-scrollbar {
-  display: none;
-}
+  
+
 }
 .scrol-heading{
   display: flex;
@@ -327,22 +339,8 @@ body{
   overflow-x: scroll;
   }
 }
-.fram-div{
-  display: flex;
-  position: relative;
-  bottom: 200px;
-  align-items: center;
-  gap: 10px;
-   scrollbar-width: none;
-  scroll-behavior: smooth;
-  overflow: hidden;
-  overflow-x: scroll;
-  padding: 20px;
 
-}
-.fram-div::-webkit-scrollbar {
-  display: none;
-}
+
 .fram-img{
   height: 300px;
   margin-top: 240px;
@@ -517,7 +515,9 @@ body{
   }
 
   .main-img {
-    height: 220px;
+    display: flex;
+    justify-content: center;
+    height: 320px;
     width: 100%;
   }
 
@@ -528,7 +528,7 @@ body{
   }
 
   .marquee-img {
-    height: 60px;
+    height: 262px;
   }
 
   
@@ -681,16 +681,39 @@ body{
   .heading{
     padding: 0 4px;
   }
-  .fram-div{
-    display: grid;
-    grid-column: 1fr, 1fr;
+ .fram-div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; 
+  align-items: center; 
+  margin-top: 50px; 
+  
+}
+.headinf-div{
+  height: 650px;
+
+}
+.arro-img{
+  position: relative;
+  top: 500px;
+}
+.bg-input{
+  display: none;
+}
+ .main-bg {
+   flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
+height: auto;
+padding: 20px 10px;
+gap: 20px;
   }
 }
 .marquee {
   display: flex;
   gap: 20px;
   overflow: hidden;
-  height: 400px;
+  height: 600px;
 }
 
 .marquee-column {
@@ -709,7 +732,7 @@ body{
   }
 }
 
-/* Accessibility: reduce motion */
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-column {
     animation: none;
