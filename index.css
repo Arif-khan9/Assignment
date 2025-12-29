@@ -682,7 +682,37 @@ body{
     padding: 0 4px;
   }
   .fram-div{
-    
+    display: grid;
+    grid-column: 1fr, 1fr;
+  }
+}
+.marquee {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.marquee-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: scrollUp 12s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-column {
+    animation: none;
   }
 }
 
