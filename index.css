@@ -765,10 +765,11 @@ gap: 20px;
 }
 @media (max-width: 1024px) {
   .group-img{
-    height: 115px;
+    height: 90px;
+    gap: 10px;
   }
   .fram-img{
-    height: 210px;
+    height: 150px;
   }
   .footer-div{
     gap: 20px;
