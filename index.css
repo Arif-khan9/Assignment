@@ -738,6 +738,45 @@ gap: 20px;
     animation: none;
   }
 }
+.scrling-img-div{
+  margin-top: 20px;
+   scrollbar-width: none;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.scrling-img-div{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: scroll;
+     scrollbar-width: none;
+      scroll-behavior: smooth;
+}
+.scrling-img-div::-webkit-scrollbar {
+  display: none;
+}
+.Participating-heading{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+}
+@media (max-width: 1024px) {
+  .group-img{
+    height: 115px;
+  }
+  .fram-img{
+    height: 210px;
+  }
+  .footer-div{
+    gap: 20px;
+  }
+  .bg-input{
+    display: none;
+  }
+}
 
 
 
